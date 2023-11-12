@@ -5,8 +5,7 @@ tags: ssh
 toc: true
 ---
 
-
-1.登陆服务器后
+### 登陆服务器后
 
 ```
 [root@host ~]$ ssh-keygen  <== 建立密钥对
@@ -21,7 +20,7 @@ The key fingerprint is:
 0f:d3:e7:1a:1c:bd:5c:03:f1:19:f1:22:df:9b:cc:08 root@host
 ```
 
-2.建立共钥
+### 建立共钥
 
 ```
 [root@host ~]$ cd .ssh
@@ -31,7 +30,7 @@ The key fingerprint is:
 [root@host .ssh]$ chmod 700 ~/.ssh
 ```
 
-3.关闭密码登陆权限
+### 关闭密码登陆权限
 
 ```
 vi /etc/ssh/sshd_config
@@ -41,7 +40,7 @@ vi /etc/ssh/sshd_config
 PasswordAuthentication no
 ```
 
-4.下载私钥
+### 下载私钥
 
 ```
 cat root/.ssh/id_rsa
@@ -50,7 +49,7 @@ cat root/.ssh/id_rsa
 chmod 600 id_rsa
 ```
 
-5.登陆服务器
+### 登陆服务器
 
 ```
 ssh root@ip -p aaa -i /Users/eddieho/documents/hk666

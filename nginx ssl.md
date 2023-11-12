@@ -4,7 +4,9 @@ categories: code
 tags: nginx
 toc: true
 ---
-```she
+### 80端口访问
+
+```shell
 server {
   listen 80;
   listen [::]:80;
@@ -30,10 +32,8 @@ server {
   }
 }
 ```
-
-Ssl 证书
-
-需要将证书文件防止nginx容器中
+### 443端口访问
+需要将证书文件放置nginx容器中
 
 ```sh
 server {

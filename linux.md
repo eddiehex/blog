@@ -4,7 +4,7 @@ categories: learn
 tags: linux
 toc: true
 ---
-- 查看服务器情况
+## 查看服务器情况
 
 ```shell
 #查看硬盘使用情况
@@ -15,7 +15,7 @@ free -h
 lsblk
 ```
 
-- 服务器登陆
+## 服务器登陆
 
 ```shell
 #ssh 用户名@ip地址 -p 端口号 -i 密钥地址
@@ -24,20 +24,20 @@ ssh root@206.190.232.205 -p 26838 -i /Users/eddieho/hx_for_hob/ssa/bwg_jp
 sudo -i
 ```
 
-- 安装相关依赖
+## 安装相关依赖
 
 ```shell
 yum -y install wget
 yum update -y && yum install curl -y
 ```
 
-- 常用vm测试
+## 常用vm测试
 
 ```shell
 wget -qO- bench.sh | bash
 ```
 
-- 查看ip
+## 查看ip
 
 ```shell
 #查看公网ip
@@ -46,7 +46,7 @@ curl -s http://tnx.nl/ip
 ifconfig -a
 ```
 
-- 文件夹操作
+## 文件夹操作
 
 ``` shell
 # 移动或者改名
@@ -58,7 +58,7 @@ rm myblog
 rm -rf blog
 ```
 
-- 处理防火墙
+## 处理防火墙
 
 ```shell
 #停止firewall
@@ -71,7 +71,7 @@ service iptables stop
 chkconfig iptables off
 ```
 
-- 环境变量
+## 环境变量
 
 ```shell
 # 直接用export命令
