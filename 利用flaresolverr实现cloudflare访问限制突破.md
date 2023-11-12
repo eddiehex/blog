@@ -5,15 +5,15 @@ tags: flaresolverr
 toc: true
 ---
 
-#### 背景
+## 背景
 
 最近使用想通过RSS订阅常用论坛，做到信息统一浏览，但常用的nodeseek论坛因托管于cloudflare平台，直接订阅其RSS会出现因cloudflare保护措施无法访问获取。
 
-#### 解决方案
+## 解决方案
 
 通过部署flaresolverr绕过cloudflare防范从而对网站进行访问。
 
-##### flaresolverr 部署
+### flaresolverr 部署
 
 通过docker部署
 
@@ -21,9 +21,9 @@ toc: true
 docker run -d   --name=flaresolverr   -p 8191:8191   -e LOG_LEVEL=info   --restart unless-stopped   ghcr.io/flaresolverr/flaresolverr:latest
 ```
 
-##### flaresolverr使用
+### flaresolverr使用
 
-###### request.get
+#### request.get
 
 ```shell
 curl -L -X POST 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data-raw '{
@@ -92,7 +92,7 @@ curl -L -X POST 'http://localhost:8191/v1' -H 'Content-Type: application/json' -
 }
 ```
 
-###### sessions.create
+#### sessions.create
 
 ```shell
 # 创建seesion
@@ -111,7 +111,16 @@ curl -L -X POST 'http://localhost:8191/v1' -H 'Content-Type: application/json' -
   }'
 ```
 
-#### 场景应用
+#### session.list
+
+```shell
+curl -L -X POST 'http://localhost:8191/v1' -H 'Content-Type: application/json' --data-raw '{
+    "cmd": "sessions.list"}'
+```
+
+
+
+## 场景应用
 
 ```python
 from http.server import BaseHTTPRequestHandler, HTTPServer
