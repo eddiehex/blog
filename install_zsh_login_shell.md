@@ -2,6 +2,7 @@
 title: 如何编写简易登陆脚本&&安装iterm2和oh-my-zsh&&配置oh-my-zsh
 categories: code
 tags: iterm2 oh-my-zsh
+toc: true
 ---
 
 最近看了几篇推荐mac软件的文章，其中多少有提到了iterm2再加上mac自带的终端相对有些局限就开始捣鼓iterm2和oh-my-zsh；

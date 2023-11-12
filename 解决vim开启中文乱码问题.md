@@ -2,6 +2,7 @@
 title: vim中文乱码问题解决
 categories: code
 tags: vim
+toc: true
 ---
 
 1 新建～/.vimrc文件

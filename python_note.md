@@ -2,6 +2,7 @@
 title: python 学习笔记
 categories: learn
 tags: python
+toc: true
 ---
 
 ## python环境安装
@@ -283,7 +284,7 @@ while True:
   - ```python
     # 定义列表
     list1=['html','css','xml','databas']
-
+  
     # 更新列表某元素
     list1[1] = 'css3'
     print (list1)
@@ -361,14 +362,14 @@ while True:
   1 if 条件表达式：
   		条件语句块
     	pass #pass是python中的关键字，代表一个空行（也可以不写），代表条件语句块结束
-
+  
   2 if 条件表达式：
   		条件语句块
     	pass
   else：
   		条件语句库
     	pass
-
+  
   3 if 条件表达式1:
     		条件语句块
       	pass

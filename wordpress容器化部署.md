@@ -1,7 +1,8 @@
 ---
-title: 通过docker搭建Wordpress记录
+title: wordpress容器化部署
 categories: code
-tags: wordpress docker
+tags: wordpress
+toc: true
 ---
 
 ## 前记

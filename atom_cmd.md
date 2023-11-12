@@ -2,6 +2,7 @@
 title: Atom 常用命令
 categories: learn
 tags: atom
+toc: true
 ---
 
 1 开启设置面板

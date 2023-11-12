@@ -2,6 +2,7 @@
 title: git 知识
 categories: code
 tags: git
+toc: true
 ---
 
 ```

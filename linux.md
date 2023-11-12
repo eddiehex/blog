@@ -2,6 +2,7 @@
 title: linux 知识
 categories: learn
 tags: linux
+toc: true
 ---
 - 查看服务器情况
 

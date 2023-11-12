@@ -2,6 +2,7 @@
 title: nginx 知识
 categories: learn
 tags: nginx
+toc: true
 ---
 #### 配置文件详解
 

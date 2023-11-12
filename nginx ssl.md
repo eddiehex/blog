@@ -2,6 +2,7 @@
 title: nginx ssl 配置
 categories: code
 tags: nginx
+toc: true
 ---
 ```she
 server {
