@@ -1,7 +1,7 @@
 ---
 title: hexo 容器化部署
 categories: code
-tags: hexo docker
+tags: [hexo,docker]
 toc: true
 ---
 #### Dockerfile 构建hexo镜像

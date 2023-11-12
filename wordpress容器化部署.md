@@ -1,7 +1,7 @@
 ---
 title: wordpress容器化部署
 categories: code
-tags: wordpress
+tags: [wordpress,docker]
 toc: true
 ---
 

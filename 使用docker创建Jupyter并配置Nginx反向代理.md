@@ -1,7 +1,7 @@
 ---
 title: 使用docker创建Jupyter并配置Nginx反向代理
 categories: code
-tags: jupyter nginx docker
+tags: [jupyter,nginx,docker]
 toc: true
 ---
 

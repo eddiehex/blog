@@ -1,7 +1,7 @@
 ---
 title: acme安装证书
 categories: code
-tags: acme dns
+tags: acme
 toc: true
 ---
 #### 手动通过acme安装证书

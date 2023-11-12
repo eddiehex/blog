@@ -1,7 +1,7 @@
 ---
 title: 如何编写简易登陆脚本&&安装iterm2和oh-my-zsh&&配置oh-my-zsh
 categories: code
-tags: iterm2 oh-my-zsh
+tags: [iterm2,oh-my-zsh]
 toc: true
 ---
 

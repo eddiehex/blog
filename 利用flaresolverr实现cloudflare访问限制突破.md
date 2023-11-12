@@ -1,7 +1,7 @@
 ---
 title: 利用flaresolverr 实现cloudflare访问限制突破
 categories: code
-tags: flaresolverr
+tags: [flaresolverr,python]
 toc: true
 ---
 
