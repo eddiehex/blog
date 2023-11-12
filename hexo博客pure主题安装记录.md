@@ -82,40 +82,6 @@ links-desc: 服务描述
 - 添加 `style="display: none;"`
 - 修改条件判断`if(theme.profile && theme.profile.articleSelfBlock)`
 
-```ejs
-<blockquote class="mt-2x" style="display: none;">
-  <ul class="post-copyright list-unstyled">
-    <% if (post.permalink) { %>
-    <li class="post-copyright-link hidden-xs">
-      <strong>本文链接：</strong>
-      <a href="<%- post.permalink %>" title="<%= post.title %>" target="_blank" rel="external"><%- decodeURIComponent(post.permalink) %></a>
-    </li>
-    <% } %>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
-</blockquote>
-<% if(theme.profile && theme.profile.articleSelfBlock) { %>
-<% var profile = theme.profile; %>
-<div class="panel panel-default panel-badger">
-  <div class="panel-body">
-    <figure class="media">
-      <div class="media-left">
-        <a href="<%= profile.follow %>" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="<%= ( profile.gravatar ? gravatar(profile.gravatar, 128) : url_for(profile.avatar)) %>" class="img-rounded w-full" alt="">
-        </a>
-      </div>
-      <div class="media-body">
-        <h3 class="media-heading"><a href="<%= profile.follow %>" target="_blank"><span class="text-dark"><%= profile.author %></span><small class="ml-1x"><%= profile.author_title %></small></a></h3>
-        <div><%= profile.author_description %></div>
-      </div>
-    </figure>
-  </div>
-</div>
-<% } %>
-```
-
 ## 关闭评论板块
 
 修改_config.yml文件 将type 改成 false
@@ -130,16 +96,7 @@ comment:
 根据sidebar.ejs的判断语句:
 
 ```ejs
-<% if (!index && theme.config.toc && post.toc) { %>
-  <aside class="sidebar sidebar-toc collapse <% if(theme.config.autoUnfold){%>  in  <%}%>" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    <nav id="toc" class="article-toc">
-      <h3 class="toc-title"><%= __('article.catalogue') %></h3>
-      <%- toc(post.content) %>
-    </nav>
-  </div>
-</aside>
-<% } %>
+if (!index && theme.config.toc && post.toc)
 ```
 
 我们可以看出需要满足三个条件:
