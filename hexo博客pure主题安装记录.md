@@ -2,7 +2,7 @@
 title: hexo博客pure主题安装记录
 categories: code
 tag： hexo
-toc: true
+toc： true
 ---
 
 ## hexo插件安装
@@ -155,7 +155,7 @@ comment:
   title: hexo博客pure主题安装记录
   categories: code
   tag： hexo
-  toc: true #这个
+  toc： true #这个
   ---
   ```
 
