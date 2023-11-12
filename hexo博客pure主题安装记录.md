@@ -1,7 +1,7 @@
 ---
 title: hexo博客pure主题安装记录
 categories: code
-tag： hexo
+tags： hexo
 toc： true
 ---
 
@@ -154,7 +154,7 @@ comment:
   ---
   title: hexo博客pure主题安装记录
   categories: code
-  tag： hexo
+  tags： hexo
   toc： true #这个
   ---
   ```
