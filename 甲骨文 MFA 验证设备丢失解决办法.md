@@ -1,7 +1,7 @@
 ---
 title: 甲骨文MFA验证设备丢失解决办法
 categories: code
-tags: BBR
+tags: MFA
 ---
 
 背景：
