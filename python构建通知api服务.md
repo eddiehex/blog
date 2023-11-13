@@ -9,7 +9,7 @@ toc: true
 
 有必要的话先安装虚拟环境，进行隔离
 
-```
+```shell
 pip install virtualenv
 # 或者
 apt-get install python3-venv
@@ -23,7 +23,7 @@ deactive
 
 安装必要模块
 
-```
+```shell
 pip install flask
 pip requests
 ```
@@ -79,7 +79,7 @@ if __name__ == '__main__':
 - 第一种写法nginx会将`/api` 路径带入服务导致路由路径变为`/api/send_notification` 从而报错，需要改flask路由
 - 第二种写法则去掉了路径中的`/api` 
 
-```
+```shell
 location /api {
     proxy_pass http://127.0.0.1:5000;
     proxy_set_header Host $host;
@@ -89,7 +89,7 @@ location /api {
 }
 ```
 
-```
+```shell
 location /api {
     rewrite ^/api(/.*)$ $1 break;  # 去掉路径中的 /api 部分
     proxy_pass http://127.0.0.1:5000;
