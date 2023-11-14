@@ -24,3 +24,15 @@ set fencs=utf8,gbk,gb2312,gb18030
 ```shell
 source ~/.vimrc
 ```
+
+#### 其他
+
+linux 无法正常显示中文
+
+```shell
+echo "export LANG=en_US.UTF-8" >> ~/.bashrc 
+source ~/.bashrc
+```
+
+
+
