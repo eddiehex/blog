@@ -87,3 +87,24 @@ export PATH="$PATH:/opt/au1200_rm/build_tools/bin"
 vi ~/.bashrc
 alias v2ray=/usr/local/sbin/v2ray
 ```
+
+## 日期&&时间
+
+```sh
+# 当前时间
+date
+- Tue 14 Nov 2023 04:13:21 PM UTC
+# 当前时区
+timedatectl
+- Local time: Tue 2023-11-14 16:14:00 UTC
+           Universal time: Tue 2023-11-14 16:14:00 UTC
+                 RTC time: Tue 2023-11-14 16:14:01
+                Time zone: Etc/UTC (UTC, +0000)
+- System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+          
+# 修改时区为上海
+timedatectl set-timezone Asia/Shanghai
+```
+
