@@ -1,4 +1,9 @@
-## python 虚拟环境安装
+---
+title: python 虚拟环境安装
+categories: code
+tags: python
+tuc: true
+---
 
 - 自带工具包 vevn
 
