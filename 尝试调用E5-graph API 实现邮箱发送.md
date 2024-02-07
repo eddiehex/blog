@@ -10,7 +10,7 @@ toc: true
 - 创建api 获取client_Id, client_secrete
 - 添加api权限
 
-![img](https://od.wadaho.cf/api/raw/?path=/picture/blog/api_authority.png)
+![img](https://od.009100.xyz/api/raw/?path=/picture/blog/api_authority.png)
 
 ## 基于Flask 创建API
 
@@ -141,7 +141,7 @@ except json.JSONDecodeError as e:
 
 因微软限制邮件滥发等原因，调用成功后邮件被退回
 
-![fail](https://od.wadaho.cf/api/raw/?path=/picture/blog/fail.png)
+![fail](https://od.009100.xyz/api/raw/?path=/picture/blog/fail.png)
 
 ## requests 库post 和get 方法
 
