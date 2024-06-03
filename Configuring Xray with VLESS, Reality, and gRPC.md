@@ -1,11 +1,9 @@
 ---
 title: Configuring Xray with VLESS, Reality, and gRPC
 categories: code
-tags: [xray,Vless,Singbox]
+tags: [xray,vless,singbox]
 toc: true
 ---
-## Configuring Xray with VLESS, Reality, and gRPC
-
 This guide outlines setting up a secure and efficient Xray connection using the VLESS protocol with Reality and gRPC. This method offers several advantages:
 
 * **Enhanced Security:**  Benefits from the inherent security of VLESS and Reality protocols.
